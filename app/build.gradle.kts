@@ -41,6 +41,7 @@ android {
     }
 }
 dependencies {
+    implementation(libs.material)
     val nav_version = "2.7.4"
     implementation("com.google.firebase:firebase-firestore-ktx:24.4.0")
 // Jetpack Compose

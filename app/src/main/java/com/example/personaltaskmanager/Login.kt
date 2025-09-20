@@ -80,7 +80,7 @@ fun Login(NavigateToLogin: () -> Unit, NavigateToSignUp: () -> Unit, navControll
             onClick = {
                 emailError = when {
                     email.isBlank() -> "Email is required"
-                    !isValidEmail(email) -> "Invalid Email"
+
                     else -> ""
                 }
                 passwordError = when {
@@ -107,14 +107,8 @@ fun Login(NavigateToLogin: () -> Unit, NavigateToSignUp: () -> Unit, navControll
         }
     }
 
-  /*      Column {
-            Spacer(modifier = Modifier.height(8.dp))
-            Text("-----------------or----------------")
-        }*/
     }
 
 
 
-fun isValidEmail(email: String): Boolean {
-    return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-}
+
